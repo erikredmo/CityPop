@@ -1,7 +1,8 @@
 import React from 'react';
 import { ImageBackground, View, Text } from 'react-native';
 import sharedStyles from '../shared/sharedStyles';
-import SearchButton from '../components/searchButton';
+import CityButton from '../components/CityButton';
+import CountryButton from '../components/CountryButton';
 import backgroundindia from '../assets/backgroundindia.jpg';
 
 
@@ -17,8 +18,12 @@ function welcomeScreen(props) {
                 The easiest way to find out the population of a city. Search by city or country to find out!
             </Text>
 
-            <SearchButton style={sharedStyles.cityButton} buttonName={<Text>Search By City</Text>}></SearchButton>
-            <SearchButton style={sharedStyles.countryButton} buttonName={<Text>Search By Country</Text>}></SearchButton>
+            <CityButton
+                buttonText={<Text>Search By City</Text>}>
+            </CityButton>
+            <CountryButton
+                buttonText={<Text>Search By Country</Text>}>
+            </CountryButton>
 
         </ImageBackground>
     );

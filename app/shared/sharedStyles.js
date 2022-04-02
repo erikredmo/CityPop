@@ -3,44 +3,35 @@ import { StyleSheet } from 'react-native';
 export default sharedStyles = StyleSheet.create({
     background: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         alignItems: 'center',
     },
 
-    buttonLooks: {
-        backgroundColor: 'rgb(231, 224, 234)',
-        padding: 10,
-        borderRadius: 6,
-        marginVertical: 8,
-        width: '60%',
-        alignItems: 'center',
+    buttonContainer: {
+        width: 180,
+        top: 60,
+        bottom: 30,
         justifyContent: 'center',
     },
 
     cityButton: {
-        position: 'absolute',
-        top: 175,
+        backgroundColor: 'rgb(231, 224, 234)',
         padding: 10,
         borderRadius: 6,
-        marginVertical: 8,
-        justifyContent: 'center',
+        width: 180,
+        height: '24%',
         alignItems: 'center',
-        width: '60%',
-        height: 70,
-        backgroundColor: 'rgb(231, 224, 234)',
+        justifyContent: 'center',
     },
 
     countryButton: {
-        position: 'absolute',
-        top: 250,
+        backgroundColor: 'rgb(231, 224, 234)',
         padding: 10,
         borderRadius: 6,
-        marginVertical: 8,
+        width: 180,
+        height: '24%',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '60%',
-        height: 70,
-        backgroundColor: 'rgb(231, 224, 234)',
     },
 
     header: {
