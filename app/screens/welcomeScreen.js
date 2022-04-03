@@ -19,10 +19,10 @@ function welcomeScreen(props) {
             </Text>
 
             <CityButton
-                buttonText={<Text>Search By City</Text>}>
+                buttonText={<Text>Search By City</Text>} navigation={props.navigation}>
             </CityButton>
             <CountryButton
-                buttonText={<Text>Search By Country</Text>}>
+                buttonText={<Text>Search By Country</Text>} navigation={props.navigation}>
             </CountryButton>
 
         </ImageBackground>

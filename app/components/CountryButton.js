@@ -4,10 +4,13 @@ import sharedStyles from '../shared/sharedStyles';
 
 
 
-export default function SearchButton({ buttonText }) {
+export default function SearchButton({ buttonText, navigation }) {
+    const pressHandler = () => {
+        navigation.navigate('CountryScreen')
+    }
     return ( 
-        <View>
-            <TouchableOpacity style={sharedStyles.countryButton} onPress={() => alert('hey')}>
+        <View style={sharedStyles.buttonContainer}>
+            <TouchableOpacity style={sharedStyles.countryButton} onPress={pressHandler}>
                 <Text> { buttonText } </Text>
             </TouchableOpacity>
         </View>
