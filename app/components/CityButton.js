@@ -8,7 +8,6 @@ export default function SearchButton({ buttonText, navigation }) {
     const pressHandler = () => {
         navigation.navigate('CityScreen')
     }
-
     return ( 
         <View style={sharedStyles.buttonContainer}>
             <TouchableOpacity style={sharedStyles.cityButton} onPress={pressHandler}>

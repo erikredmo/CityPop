@@ -9,8 +9,8 @@ export default sharedStyles = StyleSheet.create({
 
     buttonContainer: {
         width: 180,
-        top: 60,
-        bottom: 30,
+        top: 20,
+        bottom: 20,
         justifyContent: 'center',
     },
 
@@ -49,5 +49,12 @@ export default sharedStyles = StyleSheet.create({
         width: '75%',
         fontSize: 20,
         color: 'black',
+    },
+
+    searchScreenInfo: {
+        position: 'absolute',
+        top: 100,
+        fontSize: 30,
+        color: 'black'
     }
 })
